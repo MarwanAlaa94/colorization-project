@@ -88,8 +88,8 @@ class Palette():
         seg_len = 256//num_segs
 
         seg = np.ones((num_segs, num_segs, 3))
-        for x in xrange(num_segs):
-            for y in xrange(num_segs):
+        for x in range(num_segs):
+            for y in range(num_segs):
                 seg[x:(x+1), y:(y+1), 0] = np.average(cimg[x*seg_len:(x+1)*seg_len, y*seg_len:(y+1)*seg_len, 0])
                 seg[x:(x+1), y:(y+1), 1] = np.average(cimg[x*seg_len:(x+1)*seg_len, y*seg_len:(y+1)*seg_len, 1])
                 seg[x:(x+1), y:(y+1), 2] = np.average(cimg[x*seg_len:(x+1)*seg_len, y*seg_len:(y+1)*seg_len, 2])
@@ -97,7 +97,7 @@ class Palette():
 
     def train(self):
         s = tf.Session()
-        s.run(tf.initialize_all_variables())
+        s.run(tf.global_variables_initializer())
         self.loadmodel(s)
 
         data = glob(os.path.join("imgs", "*.jpg"))
@@ -114,8 +114,8 @@ class Palette():
 
         datalen = len(data)
 
-        for e in xrange(20000):
-            for i in range(datalen / self.batch_size):
+        for e in range(20000):
+            for i in range(datalen // self.batch_size):
                 batch_files = data[i*self.batch_size:(i+1)*self.batch_size]
                 batch = np.array([get_image(batch_file) for batch_file in batch_files])
 
@@ -158,7 +158,7 @@ class Palette():
 
     def sample(self):
         s = tf.Session()
-        s.run(tf.initialize_all_variables())
+        s.run(global_variables_initializer())
         self.loadmodel(s, False)
 
         data = glob(os.path.join("imgs", "*.jpg"))
