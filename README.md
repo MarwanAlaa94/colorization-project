@@ -17,3 +17,37 @@ then to download from machine follow this command and reverse source with distin
 ```
  gcloud compute  copy-files {instanceName}:{full path of the file in the machine} {path of the distination desired on laptop}
 ```
+
+### unzip a file using terminal
+
+```
+ sudo apt-get install unzip
+ unzip file.zip -d destination_folder
+```
+
+### zip a file using terminal
+
+```
+ sudo apt-get install unzip
+ unzip file.zip -d destination_folder
+```
+### compress zip file
+
+```
+sudo apt-get install zip gzip tar
+zip -r my_arch.zip my_folder
+
+```
+* for tar files 
+
+compress
+```
+sudo apt-get install tar
+tar -cvzf may_arch.tar.gz my_folder
+```
+extract
+```
+sudo apt-get install tar
+tar -xvzf may_arch.tar.gz
+```
+
