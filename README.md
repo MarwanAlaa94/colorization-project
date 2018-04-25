@@ -12,10 +12,10 @@ wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-re
 ```
 2- Install cuda 
 ```
-    `sudo dpkg -i cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64.deb`
-    `sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub`
-    `sudo apt-get update`
-    `sudo apt-get install cuda`
+    sudo dpkg -i cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64.deb
+    sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub
+    sudo apt-get update
+    sudo apt-get install cuda
 
 ```
 
