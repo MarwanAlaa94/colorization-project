@@ -27,14 +27,17 @@ wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-re
 
 ```
 3 - Download CUDNN library files from our drive using the commandline using the command mentioned below 
-* https://drive.google.com/open?id=1hffslhDUX3G10J08kPJtcvm_e9eDvV0x
-* https://drive.google.com/open?id=1SC7U_u1hhmeUP0YBJ-hpK6IejwxVGG7Z
-* https://drive.google.com/open?id=1Lz3ADsM3wp2FF5QhPyLG1KnozFbzb2_v
+* https://drive.google.com/open?id=115JjfPFruT8Xdjs75ZaXbNeS2WtT8m6W
+* https://drive.google.com/open?id=1vdmfhl9csryV2Pd1Qjg9YuKv695xq3tP
+* https://drive.google.com/open?id=11NSYNehzW1732XgYPDvKyvFxe3x9ogrN
 
-4 - Install the three files the normal file then the dev then the doc in order like this
-
-    `sudo dpkg -i libcudnn7_7.0.3.11-1+cuda9.0_amd64.deb`
-
+4 - Install the three files by using these commands
+```
+    `sudo dpkg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb`
+    `sudo dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb`
+    `sudo dpkg -i libcudnn7-doc_7.0.5.15-1+cuda9.0_amd64.deb`
+    
+```
 5- Install the tensorflow normally using the following commands 
 ```
     `sudo apt-get install python3-pip python3-dev python-virtualenv`
