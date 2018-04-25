@@ -64,7 +64,7 @@ wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download
 ** follow this link to download, install and initialize gcloud
 https://cloud.google.com/sdk/downloads
 
-then to download from machine follow this command and reverse source with distination to upload a file to the gloud machine
+then to download from machine follow this command and reverse source with distination to upload a file to the cloud machine
 ```
  gcloud compute  copy-files {instanceName}:{full path of the file in the machine} {path of the distination desired on laptop}
 ```
