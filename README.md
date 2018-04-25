@@ -51,7 +51,7 @@ wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-re
     `source ~/tensorflow/bin/activate`
     
     
-## general useful commads for the cloud and environment
+## General useful commads for the cloud and environment
 
 ### Downlaod from a file from the drive using the terminal
 
