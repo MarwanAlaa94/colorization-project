@@ -1,7 +1,7 @@
 # colorization-project
 
 
-## install GPU environment 
+## Install GPU environment 
 
 ### 
 
@@ -9,7 +9,7 @@
 ```
 wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64-deb
 ```
-2- install cuda 
+2- Install cuda 
 ```
     `sudo dpkg -i cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64.deb`
     `sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub`
@@ -17,6 +17,37 @@ wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-re
     `sudo apt-get install cuda`
 
 ```
+
+4- Add lines to bachrc 
+```
+   `echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc`  
+   `echo 'export PATH=$PATH:$CUDA_HOME/bin' >> ~/.bashrc`  
+   `echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> ~/.bashrc`  
+   `source ~/.bashrc`
+
+```
+3 - Download CUDNN library files from our drive using the commandline using the command mentioned below 
+* https://drive.google.com/open?id=1hffslhDUX3G10J08kPJtcvm_e9eDvV0x
+* https://drive.google.com/open?id=1SC7U_u1hhmeUP0YBJ-hpK6IejwxVGG7Z
+* https://drive.google.com/open?id=1Lz3ADsM3wp2FF5QhPyLG1KnozFbzb2_v
+
+4 - Install the three files the normal file then the dev then the doc in order like this
+
+    `sudo dpkg -i libcudnn7_7.0.3.11-1+cuda9.0_amd64.deb`
+
+5- Install the tensorflow normally using the following commands 
+```
+    `sudo apt-get install python3-pip python3-dev python-virtualenv`
+    `virtualenv --system-site-packages -p python3 tensorflow`
+    `pip3 install --upgrade tensorflow`
+    `pip3 install --upgrade tensorflow-gpu`
+```
+
+6- Activate tensorflow and run whatever you want :)
+
+    `source ~/tensorflow/bin/activate`
+    
+    
 ## general useful commads for the cloud and environment
 
 ### downlaod from a file from the drive using the terminal
