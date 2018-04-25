@@ -1,11 +1,11 @@
-# colorization-project
+# Colorization-project
 
 
 ## Install GPU environment 
 
 ### 
 
-1- download cuda accourding to the machine specifications for our case 
+1- Download cuda accourding to the machine specifications for our case 
 ```
 wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64-deb
 ```
