@@ -60,7 +60,7 @@ wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-re
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id={token}' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id={token}" -O {FILENAME} && rm -rf /tmp/cookies.txt
 ```
 
-### Upload/download from/to the cloud from/to the machine 
+### Upload/download from/to the cloud from/to the local machine 
 ** follow this link to download, install and initialize gcloud
 https://cloud.google.com/sdk/downloads
 
