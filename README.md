@@ -1,5 +1,22 @@
 # colorization-project
 
+
+## install GPU environment 
+
+### 
+
+1- download cuda accourding to the machine specifications for our case 
+```
+wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64-deb
+```
+2- install cuda 
+```
+    `sudo dpkg -i cuda-repo-ubuntu1704-9-0-local_9.0.176-1_amd64.deb`
+    `sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub`
+    `sudo apt-get update`
+    `sudo apt-get install cuda`
+
+```
 ## general useful commads for the cloud and environment
 
 ### downlaod from a file from the drive using the terminal
@@ -40,12 +57,12 @@ zip -r my_arch.zip my_folder
 ```
 * for tar files 
 
-compress
+* compress
 ```
 sudo apt-get install tar
 tar -cvzf may_arch.tar.gz my_folder
 ```
-extract
+* extract
 ```
 sudo apt-get install tar
 tar -xvzf may_arch.tar.gz
