@@ -50,7 +50,7 @@ wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-re
     
 ## general useful commads for the cloud and environment
 
-### downlaod from a file from the drive using the terminal
+### * downlaod from a file from the drive using the terminal
 
 ** replace {token} with file token and {FILENAME} with the file name 
 ```
