@@ -19,12 +19,12 @@ wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-re
 
 ```
 
-4- Add lines to bachrc 
+4- Add lines to bashrc 
 ```
-   `echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc`  
-   `echo 'export PATH=$PATH:$CUDA_HOME/bin' >> ~/.bashrc`  
-   `echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> ~/.bashrc`  
-   `source ~/.bashrc`
+   echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc
+   echo 'export PATH=$PATH:$CUDA_HOME/bin' >> ~/.bashrc
+   echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> ~/.bashrc
+   source ~/.bashrc`
 
 ```
 3 - Download CUDNN library files from our drive using the commandline using the command mentioned below 
@@ -34,27 +34,27 @@ wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda-re
 
 4 - Install the three files by using these commands
 ```
-    `sudo dpkg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb`
-    `sudo dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb`
-    `sudo dpkg -i libcudnn7-doc_7.0.5.15-1+cuda9.0_amd64.deb`
+    sudo dpkg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb
+    sudo dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb
+    sudo dpkg -i libcudnn7-doc_7.0.5.15-1+cuda9.0_amd64.deb
     
 ```
 5- Install the tensorflow normally using the following commands 
 ```
-    `sudo apt-get install python3-pip python3-dev python-virtualenv`
-    `virtualenv --system-site-packages -p python3 tensorflow`
-    `pip3 install --upgrade tensorflow`
-    `pip3 install --upgrade tensorflow-gpu`
+    sudo apt-get install python3-pip python3-dev python-virtualenv
+    virtualenv --system-site-packages -p python3 tensorflow
+    pip3 install --upgrade tensorflow
+    pip3 install --upgrade tensorflow-gpu
 ```
 
 6- Activate tensorflow and run whatever you want :)
 
-    `source ~/tensorflow/bin/activate`
+    source ~/tensorflow/bin/activate
     
     
 ## General useful commads for the cloud and the environment
 
-### Downlaod from a file from the drive using the terminal
+### Downlaod a file from the drive using the terminal
 
 ** replace {token} with file token and {FILENAME} with the file name 
 ```
