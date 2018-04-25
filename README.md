@@ -66,7 +66,7 @@ https://cloud.google.com/sdk/downloads
 
 then to download from machine follow this command and reverse source with distination to upload a file to the cloud machine
 ```
- gcloud compute  copy-files {instanceName}:{full path of the file in the machine} {path of the distination desired on laptop}
+ gcloud compute  copy-files {instanceName}:{full path of the file on the cloud machine} {path of the distination desired on the local machine}
 ```
 ### Upload from the machine terminal to the drive
 1- Download and istall gdrive
