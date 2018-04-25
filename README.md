@@ -69,7 +69,7 @@ then to download from machine follow this command and reverse source with distin
  gcloud compute  copy-files {instanceName}:{full path of the file on the cloud machine} {path of the distination desired on the local machine}
 ```
 ### Upload from the machine terminal to the drive
-1- Download and istall gdrive
+1- Download and install gdrive
 ```
  wget https://docs.google.com/uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE&export=download
  mv uc\?id\=0B3X9GlR6EmbnWksyTEtCM0VfaFE gdrive
