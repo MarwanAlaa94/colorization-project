@@ -65,6 +65,21 @@ then to download from machine follow this command and reverse source with distin
 ```
  gcloud compute  copy-files {instanceName}:{full path of the file in the machine} {path of the distination desired on laptop}
 ```
+### Upload from the machine terminal to the drive
+1- Download and istall gdrive
+```
+ wget https://docs.google.com/uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE&export=download
+ mv uc\?id\=0B3X9GlR6EmbnWksyTEtCM0VfaFE gdrive
+ chmod +x gdrive
+ sudo install gdrive /usr/local/bin/gdrive
+```
+2- You will need to tell Google Drive to allow this program to connect to your account. To do this, run the gdrive program with any parameter and copy the text it gives you to your browser. Then paste in to your SSH window the response code that Google gives you. Run the following
+
+    `gdrive list`
+
+3- Upload the file by the command 
+
+    `gdrive upload filename`
 
 ### Unzip a file using terminal
 
